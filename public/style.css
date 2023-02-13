@@ -102,6 +102,9 @@ input:focus{
   color:grey;
   text-decoration: underline;
 }
+.greeting p{
+  text-align: center;
+}
 
 @media screen and (max-width: 768px) {
   .form{
@@ -130,5 +133,13 @@ input:focus{
   .banner-header p{
     font-size: .9rem;
   }
-
+  .greeting{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+  }
+  .greeting p{
+    font-size: 1.2rem;
+  }
 }

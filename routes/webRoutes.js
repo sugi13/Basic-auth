@@ -4,14 +4,19 @@ const router = express.Router();
 
 const controller = require('../controllers/webController');
 
+router.get("/", controller.get_Home);
 
-router.get('/', controller.get_signUp);
+router.get('/signup', controller.get_signUp);
 
-router.get('/login', controller.get_login);
+router.get("/login", controller.get_login);
 
-router.post('/signup', controller.post_signUp);
+router.get("/userview", controller.get_userView)
 
-router.post('/login', controller.post_login);
+router.get('/Home', controller.get_Home);
+
+router.post("/userview", controller.post_signUp);
+
+
 
 
 module.exports = router;
