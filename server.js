@@ -18,12 +18,12 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}))
 
 // mongoDB connection //
-mongoose.connect('mongodb://localhost:27017/test')
-.then((res) =>{
-  console.log("Database connected")
+mongoose.connect('mongodb+srv://sukant:sugi123@cluster0.ktfs88z.mongodb.net/test')
+.then(()=>{
+  console.log("Connected to MongoDB")
 })
-.catch((err) =>{
-  console.log("Oops! failed to connect" + err);
+.catch(()=>{
+  console.log("Error connecting to MongoDB");
 })
 
 
